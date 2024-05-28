@@ -9,9 +9,9 @@ spec:
     kind: XNopResource
   mode: Pipeline
   pipeline:
-  - step: conditional-patch-and-transform
+  - step: patch-and-transform
     functionRef:
-      name: function-patch-and-transform
+      name: crossplane-contrib-function-patch-and-transform
     input:
       apiVersion: pt.fn.crossplane.io/v1beta1
       kind: Resources
@@ -70,9 +70,9 @@ spec:
                   value: verysecurepassword
                 - name: endpoint
                   value: 127.0.0.1
-  - step:
+  - step: unit-test
     functionRef:
-      name: function-unit-test
+      name: crossplane-contrib-function-unit-test
     input:
       apiVersion: unittest.fn.crossplane.io/v1beta1
       kind: TestCases

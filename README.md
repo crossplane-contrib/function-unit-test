@@ -13,9 +13,9 @@ Functions require Crossplane 1.14 or newer. Apply the following manifest to your
 apiVersion: pkg.crossplane.io/v1beta1
 kind: Function
 metadata:
-  name: function-unit-test
+  name: crossplane-contrib-function-unit-test
 spec:
-  package: index.docker.io/steve/function-unit-test:v0.1.0
+  package: xpkg.upbound.io/crossplane-contrib/function-unit-test:v0.1.0
 ```
 
 ## Configuring Unit Tests
@@ -31,7 +31,7 @@ useful when running this function in CI pipelines via `crossplane beta render`.
 ```yaml
  - step:
     functionRef:
-      name: function-unit-test
+      name: crossplane-contrib-function-unit-test
     input:
       apiVersion: unittest.fn.crossplane.io/v1beta1
       kind: TestCases
@@ -70,9 +70,7 @@ $ docker build . --tag=function-unit-test-runtime
 $ crossplane xpkg build -f package --embed-runtime-image=function-unit-test-runtime
 ```
 
-[functions]: https://docs.crossplane.io/latest/concepts/composition-functions
-[go]: https://go.dev
-[function guide]: https://docs.crossplane.io/knowledge-base/guides/write-a-composition-function-in-go
-[package docs]: https://pkg.go.dev/github.com/crossplane/function-sdk-go
-[docker]: https://www.docker.com
-[cli]: https://docs.crossplane.io/latest/cli
+## Reference Links
+
+- functions: <https://docs.crossplane.io/latest/concepts/composition-functions>
+- function guide <https://docs.crossplane.io/knowledge-base/guides/write-a-composition-function-in-go>

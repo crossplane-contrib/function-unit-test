@@ -1,18 +1,17 @@
 apiVersion: pkg.crossplane.io/v1beta1
 kind: Function
 metadata:
-  name: function-patch-and-transform
+  name: crossplane-contrib-function-patch-and-transform
 spec:
-  package: xpkg.upbound.io/crossplane-contrib/function-patch-and-transform:v0.2.0
-  packagePullPolicy: Always
+  package: xpkg.upbound.io/crossplane-contrib/function-patch-and-transform:v0.5.0
 ---
 apiVersion: pkg.crossplane.io/v1beta1
 kind: Function
 metadata:
-  name: function-unit-test
-  annotations:
-    render.crossplane.io/runtime: Development
+  name: crossplane-contrib-function-unit-test
+#  Uncomment for local go development of function
+#  annotations:
+#    render.crossplane.io/runtime: Development
 spec:
-  package: index.docker.io/steve/function-unit-test:v0.1.0
-  packagePullPolicy: Always
+  package: xpkg.upbound.io/crossplane-contrib/function-unit-test:v0.1.0
 
