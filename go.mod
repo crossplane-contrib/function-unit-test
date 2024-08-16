@@ -8,7 +8,7 @@ require (
 	github.com/alecthomas/kong v0.9.0
 	github.com/crossplane/crossplane-runtime v1.16.0
 	github.com/crossplane/function-sdk-go v0.3.0-rc.0.0.20240521211021-11b59ad46986
-	github.com/google/cel-go v0.20.1
+	github.com/google/cel-go v0.21.0
 	github.com/google/go-cmp v0.6.0
 	google.golang.org/protobuf v1.34.2
 	k8s.io/apimachinery v0.31.0
