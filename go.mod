@@ -2,7 +2,7 @@ module github.com/stevendborrelli/function-unit-test
 
 go 1.22.0
 
-toolchain go1.22.3
+toolchain go1.23.0
 
 require (
 	github.com/alecthomas/kong v0.9.0
