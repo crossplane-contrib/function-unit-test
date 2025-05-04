@@ -9,7 +9,7 @@ require (
 	github.com/crossplane/crossplane-runtime v1.16.0
 	github.com/crossplane/function-sdk-go v0.3.0-rc.0.0.20240521211021-11b59ad46986
 	github.com/google/cel-go v0.21.0
-	github.com/google/go-cmp v0.6.0
+	github.com/google/go-cmp v0.7.0
 	google.golang.org/protobuf v1.34.2
 	k8s.io/apimachinery v0.31.0
 	sigs.k8s.io/controller-tools v0.16.1
