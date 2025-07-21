@@ -5,7 +5,7 @@ go 1.22.0
 toolchain go1.23.0
 
 require (
-	github.com/alecthomas/kong v1.1.0
+	github.com/alecthomas/kong v1.12.1
 	github.com/crossplane/crossplane-runtime v1.16.0
 	github.com/crossplane/function-sdk-go v0.3.0-rc.0.0.20240521211021-11b59ad46986
 	github.com/google/cel-go v0.21.0
