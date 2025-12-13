@@ -10,7 +10,7 @@ This allows you to test the results of a Composition pipeline.
 Functions require Crossplane 1.14 or newer. Apply the following manifest to your cluster:
 
 ```yaml
-apiVersion: pkg.crossplane.io/v1beta1
+apiVersion: pkg.crossplane.io/v1
 kind: Function
 metadata:
   name: crossplane-contrib-function-unit-test
